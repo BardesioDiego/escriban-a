@@ -9,10 +9,10 @@ Buy Pro
 [data-bs-theme=light] {
   --bs-body-bg: #ffffff;
   --bs-body-color: #494B5B;
-  --bs-primary: #215C5C;
-  --bs-primary-rgb: 33, 92, 92;
-  --bs-primary-hover: #144B4B;
-  --bs-primary-hover-rgb: 20, 75, 75;
+  --bs-primary: #daae4e;
+  --bs-primary-rgb: 218, 174, 78;
+  --bs-primary-hover: #daae4e;
+  --bs-primary-hover-rgb: 218, 174, 78;
   --bs-secondary: #CCE8C9;
   --bs-secondary-rgb: 204, 232, 201;
   --bs-heading-color: #16181B;
@@ -30,7 +30,7 @@ Buy Pro
 }
 
 body {
-  font: 1rem/1.7 "Inter", sans-serif;
+  font: 1rem/1.7 "Poppins", sans-serif;
   background-color: var(--bs-body-bg);
   color: var(--bs-body-color);
   -webkit-font-smoothing: antialiased;
@@ -184,6 +184,7 @@ h6 {
   background-color: transparent !important;
   border: 1px solid rgba(var(--inverse-color-rgb), 0.5) !important;
 }
+
 
 .block-squares {
   position: absolute;
