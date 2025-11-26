@@ -46,67 +46,39 @@
 
 
     <!-- ======= Header =======-->
-    <header class="fbs__net-navbar navbar navbar-expand-lg dark" aria-label="freebootstrap.net navbar">
-      <div class="container d-flex align-items-center justify-content-between">
+   <header class="fbs__net-navbar navbar navbar-expand-lg dark" aria-label="Navbar">
+  <div class="container d-flex align-items-center justify-content-between">
 
+    <!-- Logo -->
+    <a class="navbar-brand w-auto" href="index.html">
+      <img class="logo dark img-fluid" src="assets/images/logo-dark.svg" alt="">
+      <img class="logo light img-fluid" src="assets/images/logo-light.svg" alt="">
+    </a>
 
-        <!-- Start Logo-->
+    
+    <!-- Menú Offcanvas -->
+    <div class="offcanvas offcanvas-end custom-offcanvas" id="mobileMenu">
+      <div class="offcanvas-header">
         <a class="navbar-brand w-auto" href="index.html">
-          <!-- If you use a text logo, uncomment this if it is commented-->
-          <!-- Vertex-->
-
-          <!-- If you plan to use an image logo, uncomment this if it is commented-->
-
-          <!-- logo dark--><img class="logo dark img-fluid" src="assets/images/logo-dark.svg"
-            alt="FreeBootstrap.net image placeholder">
-
-          <!-- logo light--><img class="logo light img-fluid" src="assets/images/logo-light.svg"
-            alt="FreeBootstrap.net image placeholder">
-
+          <img class="logo dark img-fluid" src="assets/images/logo-dark.svg" alt="">
         </a>
-        <!-- End Logo-->
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
 
-        <!-- Start offcanvas-->
-        <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1"
-          aria-labelledby="fbs__net-navbarsLabel">
+      <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link scroll-link active" href="#home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="#about">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="#pricing">Novedades</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="#how-it-works">Firma digital</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="#services">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link scroll-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
 
-
-          <div class="offcanvas-header">
-            <div class="offcanvas-header-logo">
-              <!-- If you use a text logo, uncomment this if it is commented-->
-
-              <!-- h5#fbs__net-navbarsLabel.offcanvas-title Vertex-->
-
-              <!-- If you plan to use an image logo, uncomment this if it is commented-->
-              <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
-
-
-                <!-- logo dark--><img class="logo dark img-fluid" src="assets/images/logo-dark.svg"
-                  alt="FreeBootstrap.net image placeholder">
-
-                <!-- logo light--><img class="logo light img-fluid" src="assets/images/logo-light.svg"
-                  alt="FreeBootstrap.net image placeholder"></a>
-
-            </div>
-            <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
-          </div>
-
-          <div class="offcanvas-body align-items-lg-center">
-
-
-            <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link scroll-link active" aria-current="page" href="#home">Inicio</a>
-              </li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#about">Nosotros</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#pricing">Novedades</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#how-it-works">Firma digital</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#services">Servicios</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#contact">Contacto</a></li>
-            </ul>
-
-          </div>
-        </div>
         <!-- End offcanvas-->
 
 
@@ -126,8 +98,8 @@
               <div class="row">
                 <div class="col-lg-11"><span class="hero-subtitle text-uppercase" data-aos="fade-up"
                     data-aos-delay="0"></span>
-                  <h1 class="hero-title mb-3" data-aos="fade-up" data-aos-delay="100">Servicios notariales confiables en
-                    La Paloma, Rocha y Velázquez</h1>
+                  <h1 class="hero-title mb-3" data-aos="fade-up" data-aos-delay="100"><strong>Servicios notariales confiables en
+                    La Paloma, Rocha y Velázquez</strong></h1>
                   <p class="hero-description mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">Asesoramiento claro y
                     acompañamiento en cada trámite, con atención personalizada y soluciones actuales.</p>
                   <div class="cta d-flex gap-2 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="300"><a class="btn"
@@ -156,7 +128,7 @@
               <div class="row justify-content-end">
                 <div class="col-md-11 mb-4 mb-md-0"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
                     data-aos-delay="0">Sobre nosotros</span>
-                  <h2 class="mb-4" data-aos="fade-up" data-aos-delay="100">Asesoramiento notarial claro y seguro</h2>
+                  <h2 class="mb-4 titulo-destacado" data-aos="fade-up" data-aos-delay="100"><strong>Asesoramiento notarial claro y seguro</strong></h2>
                   <div data-aos="fade-up" data-aos-delay="200">
                     <p>Somos una escribanía con más de tres años de trayectoria brindando <strong>servicios notariales
                         en La
@@ -258,70 +230,15 @@
       </section>
       <!-- End Features-->
 
-      <!-- ======= Pricing =======-->
-      <section class="section pricing__v2" id="pricing">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md-5 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
-                data-aos-delay="0">Pricing</span>
-              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Plan for every budget</h2>
-              <p data-aos="fade-up" data-aos-delay="200">Experience the future of finance with our secure, efficient,
-                and user-friendly financial services</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-              <div class="p-5 rounded-4 price-table h-100">
-                <h3>Personal</h3>
-                <p>Choose a plan that fits your personal financial needs and start managing your finances more
-                  effectively.</p>
-                <div class="price mb-4"><strong>$7</strong><span>/ month</span></div>
-                <div><a class="btn" href="#">Get Started</a></div>
-              </div>
-            </div>
-            <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-              <div class="p-5 rounded-4 price-table popular h-100">
-                <div class="row">
-                  <div class="col-md-6">
-                    <h3 class="mb-3">Business</h3>
-                    <p>Optimize your business financial operations with our tailored business plans.</p>
-                    <div class="price mb-4"><strong class="me-1">$29</strong><span>/ month</span></div>
-                    <div><a class="btn btn-white hover-outline" href="#">Get Started</a></div>
-                  </div>
-                  <div class="col-md-6 pricing-features">
-                    <h4 class="text-uppercase fw-bold mb-3">Features</h4>
-                    <ul class="list-unstyled d-flex flex-column gap-3">
-                      <li class="d-flex gap-2 align-items-start mb-0"><span
-                          class="icon rounded-circle position-relative mt-1"><i
-                            class="bi bi-check"></i></span><span>Personalized financial insights and reports</span></li>
-                      <li class="d-flex gap-2 align-items-start mb-0"><span
-                          class="icon rounded-circle position-relative mt-1"><i
-                            class="bi bi-check"></i></span><span>Priority customer support</span></li>
-                      <li class="d-flex gap-2 align-items-start mb-0"><span
-                          class="icon rounded-circle position-relative mt-1"><i
-                            class="bi bi-check"></i></span><span>Access to exclusive investment opportunities</span>
-                      </li>
-                      <li class="d-flex gap-2 align-items-start mb-0"><span
-                          class="icon rounded-circle position-relative mt-1"><i
-                            class="bi bi-check"></i></span><span>AI-driven financial recommendations</span></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Pricing-->
-
+    
       <!-- ======= How it works =======-->
       <section class="section howitworks__v1" id="how-it-works">
         <div class="container">
           <div class="row mb-5">
-            <div class="col-md-6 text-center mx-auto"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
+            <div class="col-md-8 text-center mx-auto"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
                 data-aos-delay="0">Ley 18.600</span>
-              <h2 data-aos="fade-up" data-aos-delay="100">Firmas Digitales Certificadas</h2>
-              <p data-aos="fade-up" data-aos-delay="200">Tanto la <strong>Firma Electrónica simple</strong> como la <strong>avanzada</strong> cuentan con
+              <h2 class="titulo-destacado" data-aos="fade-up" data-aos-delay="100"><strong>Firmas Digitales Certificadas</strong></h2>
+              <p  class="texto-ancho" data-aos="fade-up" data-aos-delay="200">Tanto la <strong>Firma Electrónica simple</strong> como la <strong>avanzada</strong> cuentan con
                 la misma validez que la manuscrita. Permitiéndole firmar <strong>Boleto de Reserva</strong> para comprar-vender un
                 inmueble desde cualquier parte del <strong>MERCOSUR</strong>. Además de otros servicios.</p>
             </div>
@@ -378,7 +295,7 @@
           <div class="row mb-5">
             <div class="col-md-8 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
                 data-aos-delay="0">Acompañamiento Notarial en Cada Paso</span>
-              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Servicios Notariales en La Paloma, Rocha y Velázquez</h2>
+              <h2 class="mb-3 titulo-destacado" data-aos="fade-up" data-aos-delay="100"><strong>Servicios Notariales en La Paloma, Rocha y Velázquez</strong></h2>
             </div>
           </div>
           <div class="row g-4">
@@ -402,7 +319,7 @@
                           fill="currentColor" opacity="1" data-original="#000000"></path>
                       </g>
                     </svg></span>
-                  <h3 class="fs-5 mb-3">Operaciones inmobiliarias</h3>
+                  <h3 class="fs-5 mb-3 titulo-destacado"><strong>Operaciones inmobiliarias</strong></h3>
                   <p class="mb-4">Compraventa de inmuebles, estudios de títulos, redacción de escrituras y gestiones ante Registro.</p>
                 </div>
               </div>
@@ -418,7 +335,7 @@
                           fill="currentColor" opacity="1" data-original="currentColor"></path>
                       </g>
                     </svg></span>
-                  <h3 class="fs-5 mb-3">Constitución y formalización de empresas</h3>
+                  <h3 class="fs-5 mb-3 titulo-destacado"><strong>Constitución y formalización de empresas</strong></h3>
                   <p class="mb-4">Creación de sociedades, unipersonales, contratos, estatutos y trámites ante BPS, DGI y organismos públicos.</p>
                 </div>
               </div>
@@ -437,7 +354,7 @@
                           fill="currentColor" opacity="1" data-original="#000000"></path>
                       </g>
                     </svg></span>
-                  <h3 class="fs-5 mb-3">Certificación de documentos</h3>
+                  <h3 class="fs-5 mb-3 titulo-destacado"><strong>Certificación de documentos</strong></h3>
                   <p class="mb-4">Certificación de firmas, contenido y copias, incluyendo <strong>firma digital certificada.</strong></p>
                 </div>
               </div>
@@ -456,7 +373,7 @@
                           fill="currentColor" opacity="1" data-original="#000000"></path>
                       </g>
                     </svg></span>
-                  <h3 class="fs-5 mb-3">Sucesiones y actos de transmisión</h3>
+                  <h3 class="fs-5 mb-3 titulo-destacado"><strong>Sucesiones y actos de transmisión</strong></h3>
                   <p class="mb-4">Herencias, testamentos, donaciones, particiones y regularización patrimonial.</p>
                 </div>
               </div>
@@ -475,7 +392,7 @@
                           fill="currentColor" opacity="1" data-original="#000000"></path>
                       </g>
                     </svg></span>
-                  <h3 class="fs-5 mb-3">Poderes, autorizaciones y contratos</h3>
+                  <h3 class="fs-5 mb-3 titulo-destacado"><strong>Poderes, autorizaciones y contratos</strong></h3>
                   <p class="mb-4">Poderes generales y especiales, autorizaciones para menores, alquileres, préstamos y acuerdos civiles/comerciales.</p>
                 </div>
               </div>
@@ -494,7 +411,7 @@
                           fill="currentColor" opacity="1" data-original="#000000"></path>
                       </g>
                     </svg></span>
-                  <h3 class="fs-5 mb-3">Regularización y trámites registrales</h3>
+                  <h3 class="fs-5 mb-3 titulo-destacado"><strong>Regularización y trámites registrales</strong></h3>
                   <p class="mb-4">Reglamentos de copropiedad, cancelación de hipotecas, certificados y diversas gestiones públicas.</p>
                 </div>
               </div>
@@ -508,9 +425,6 @@
       <!-- ======= Footer =======-->
       <footer class="footer pt-5 pb-5">
         <div class="container">
-          <div class="row mb-5 pb-4">
-              
-          </div>
           <div class="row justify-content-between mb-5 g-xl-5">
             <div class="col-md-4 mb-5 mb-lg-0">
               <h3 class="mb-3">About</h3>
@@ -519,7 +433,7 @@
             <div class="col-md-7">
               <div class="row g-2">
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                  <h3 class="mb-3">Menú</h3>
+                  <h3 class="mb-3 titulo-destacado"><strong>Menú</strong></h3>
                   <ul class="list-unstyled">
                     <li><a href="page-about.html">Inicio</a></li>
                     <li><a href="page-careers.html">Nosotros</a></li>
@@ -529,7 +443,7 @@
                   </ul>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 quick-contact">
-                  <h3 class="mb-3">Contacto</h3>
+                  <h3 class="mb-3 titulo-destacado"><strong>Contacto</strong></h3>
                   <p class="d-flex mb-3"><i class="bi bi-geo-alt-fill me-3"></i><span>Calle a, 1234, La Paloma, Rocha. Uruguauy</p><a class="d-flex mb-3"
                     href="mailto:info@mydomain.com"><a class="d-flex mb-3"
                     href="tel://+123456789900"><i class="bi bi-telephone-fill me-3"></i><span>+598 92 560 372</span></a><a class="d-flex mb-3" href="https://freebootstrap.net"><i
@@ -540,12 +454,6 @@
           </div>
           <div class="row credits pt-3">
             <div class="col-xl-8 text-center text-xl-start mb-3 mb-xl-0">
-              <!--
-                Note:
-                =>>> Please keep all the footer links intact. <<<=
-                =>>> You can only remove the links if you buy the pro version. <<<=
-                =>>> Buy the pro version, which includes a functional PHP/AJAX contact form and many additional features.: https://freebootstrap.net/template/vertex-pro-bootstrap-website-template-for-portfolio/ <<<=
-                -->
               &copy;
               <script>document.write(new Date().getFullYear());</script> Nova.
               All rights reserved. Designed with <i class="bi bi-heart-fill text-danger"></i> by <a

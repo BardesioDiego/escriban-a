@@ -539,3 +539,7 @@ const countdownInit = () => {
 };
 document.addEventListener('DOMContentLoaded', countdownInit);
 
+  const hb = document.querySelector(".hamburger");
+  hb.addEventListener("click", () => {
+    hb.classList.toggle("active");
+  });

@@ -8,13 +8,13 @@ Buy Pro
 :root,
 [data-bs-theme=light] {
   --bs-body-bg: #ffffff;
-  --bs-body-color: #494B5B;
+  --bs-body-color: #000000;;
   --bs-primary: #daae4e;
   --bs-primary-rgb: 218, 174, 78;
   --bs-primary-hover: #daae4e;
   --bs-primary-hover-rgb: 218, 174, 78;
-  --bs-secondary: #CCE8C9;
-  --bs-secondary-rgb: 204, 232, 201;
+  --bs-secondary: #daae4e;
+  --bs-secondary-rgb: 218, 174, 78;
   --bs-heading-color: #16181B;
   --inverse-color: #494B5B;
   --inverse-color-rgb: 73, 75, 91;
@@ -68,6 +68,7 @@ h4,
 h5,
 h6 {
   color: var(--bs-heading-color);
+  
 }
 
 .container {
@@ -322,6 +323,7 @@ h6 {
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
   position: relative;
+  white-space: nowrap;
 }
 @media (max-width: 991.98px) {
   .fbs__net-navbar .navbar-nav > li > .nav-link {
@@ -773,6 +775,7 @@ h6 {
 
 .hero__v6 .hero-title {
   font-size: 48px;
+  color: #daae4e;
 }
 @media (max-width: 1199.98px) {
   .hero__v6 .hero-title {
@@ -981,8 +984,7 @@ h6 {
 }
 
 .services__v3 .subtitle {
-  background-color: rgba(var(--bs-secondary-rgb), 0.2);
-  color: var(--bs-primary);
+  color: #000000;
   display: inline-block;
   padding: 5px 12px;
   border-radius: 7px;
@@ -1242,3 +1244,8 @@ h6 {
   opacity: 1;
   visibility: visible;
 }
+
+.titulo-destacado {
+  color: #daae4e /* Cambiá por el color que quieras */
+}
+
