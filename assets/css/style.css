@@ -1096,7 +1096,7 @@ h6 {
   height: 60px;
   line-height: 60px;
   display: inline-block;
-  color: var(--bs-secondary);
+  color: #ffffff;
   background-color: var(--bs-primary);
   font-size: 18px;
 }
@@ -1364,7 +1364,7 @@ h6 {
 }
 
 .footer .quick-contact i {
-  color: var(--inverse-color);
+  color: #daae4e;
 }
 
 .footer .credits {
@@ -1409,5 +1409,10 @@ h6 {
 
 .titulo-destacado {
   color: #daae4e
+    /* Cambiá por el color que quieras */
+}
+
+.icono-destacado {
+  color: #daae4e9c !important;
     /* Cambiá por el color que quieras */
 }
