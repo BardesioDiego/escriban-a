@@ -952,12 +952,13 @@ h6 {
   height: 60px;
   line-height: 60px;
   border-radius: 50%;
-  background-color: var(--bs-secondary);
-  color: var(--bs-primary);
+  background-color: #daae4e;
+  color: #ffffff;
 }
 
 .features__v2 .content {
-  background-color: rgba(var(--bs-secondary-rgb), 0.2);
+  background-color: rgba(218, 174, 78, 0.2);
+
 }
 
 .features__v2 .btn-play i {
@@ -1415,4 +1416,8 @@ h6 {
 .icono-destacado {
   color: #daae4e9c !important;
     /* Cambiá por el color que quieras */
+}
+
+.features__v2 p {
+  font-size: 0.95rem;
 }
