@@ -543,3 +543,7 @@ document.addEventListener('DOMContentLoaded', countdownInit);
   hb.addEventListener("click", () => {
     hb.classList.toggle("active");
   });
+
+  window.addEventListener("hashchange", function() {
+    history.replaceState(null, null, ' ');
+  });

@@ -55,6 +55,10 @@
           <img class="logo light img-fluid" src="assets/images/logo-light.svg" alt="">
         </a>
 
+        <!-- Botón HAMBURGUESA SOLO EN MOBILE -->
+    <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <i class="bi bi-list fs-1"></i>
+    </button>
 
         <!-- Menú Offcanvas -->
         <div class="offcanvas offcanvas-end custom-offcanvas" id="mobileMenu">
@@ -68,16 +72,39 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav ms-auto text-center">
               <li class="nav-item"><a class="nav-link scroll-link active" href="#home">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#about">Nosotros</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#pricing">Novedades</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#how-it-works">Firma digital</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#services">Servicios</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#contact">Contacto</a></li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="#nosotros">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="#novedades">Novedades</a></li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="#firma-digital">Firma digital</a></li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="#servicios">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="#contacto">Contacto</a></li>
             </ul>
           </div>
         </div>
+
+
       </div>
     </header>
+
+    <!-- ================= MOBILE MENU (offcanvas) ================= -->
+<div class="offcanvas offcanvas-end custom-offcanvas" id="mobileMenu">
+  <div class="offcanvas-header">
+    <a class="navbar-brand w-auto" href="index.html">
+      <img class="logo dark img-fluid" src="assets/images/logo-dark.svg" alt="">
+    </a>
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="navbar-nav ms-auto text-center">
+      <li class="nav-item"><a class="nav-link scroll-link active" href="#home">Inicio</a></li>
+      <li class="nav-item"><a class="nav-link scroll-link" href="#about">Nosotros</a></li>
+      <li class="nav-item"><a class="nav-link scroll-link" href="#pricing">Novedades</a></li>
+      <li class="nav-item"><a class="nav-link scroll-link" href="#how-it-works">Firma digital</a></li>
+      <li class="nav-item"><a class="nav-link scroll-link" href="#services">Servicios</a></li>
+      <li class="nav-item"><a class="nav-link scroll-link" href="#contact">Contacto</a></li>
+    </ul>
+  </div>
+</div>
 
     <!-- End offcanvas-->
 
@@ -121,7 +148,7 @@
     <!-- End Hero-->
 
     <!-- ======= Services =======-->
-    <section class="section services__v3" id="services">
+    <section class="section services__v3" id="servicios">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-6 mx-auto text-center">
@@ -213,7 +240,7 @@
     <!-- Services-->
 
     <!-- ======= How it works =======-->
-    <section class="section howitworks__v1" id="how-it-works">
+    <section class="section howitworks__v1" id="firma-digital">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-8 text-center mx-auto"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
@@ -282,7 +309,7 @@
     <!-- End How it works-->
 
     <!-- ======= About =======-->
-    <section class="about__v4 section" id="about">
+    <section class="about__v4 section" id="nosotros">
       <div class="container">
         <div class="row">
           <div class="col-md-6 order-md-2">
@@ -330,7 +357,7 @@
     <!-- End About-->
 
     <!-- ======= Features =======-->
-    <section class="section features__v2" id="features">
+    <section class="section features__v2" id="novedades">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -403,7 +430,7 @@
 
 
     <!-- ======= Footer =======-->
-    <footer class="footer pt-5 pb-5">
+    <footer class="footer pt-5 pb-5" id="contacto">
       <div class="container">
         <div class="row justify-content-between mb-5 g-xl-5">
           <div class="col-md-4 mb-5 mb-lg-0">
