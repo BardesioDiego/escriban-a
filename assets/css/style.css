@@ -971,7 +971,6 @@ h6 {
 }
 
 .about__v4 .subtitle {
-  background-color: rgba(var(--bs-secondary-rgb), 0.2);
   color: var(--bs-primary);
   display: inline-block;
   padding: 5px 12px;
