@@ -1001,7 +1001,7 @@ h6 {
 }
 
 .about__v4 .mission-icon i {
-  color: var(--bs-secondary);
+  color: #ffffff
 }
 
 .pricing__v2 .subtitle {
@@ -1449,4 +1449,51 @@ a.d-flex {
 ul.list-unstyled li a {
     color: inherit;       /* hereda el color del texto del contenedor */
     text-decoration: none; /* opcional, quita el subrayado */
+}
+
+/* Contenedor para asegurar alineación */
+.align-self-start {
+  margin-top: 15px;
+}
+
+/* Estilo Base del Botón */
+.btn-instagram-modern {
+  background: linear-gradient(45deg, #daae4e, #f2c977);
+  color: #fff !important; /* Texto blanco */
+  padding: 12px 25px;
+  border-radius: 50px; /* Bordes redondeados modernos */
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(218, 174, 78, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Efecto al pasar el mouse (Hover) */
+.btn-instagram-modern:hover {
+  background: linear-gradient(45deg, #c49a3f, #daae4e);
+  transform: translateY(-3px); /* Se eleva un poco */
+  box-shadow: 0 8px 25px rgba(218, 174, 78, 0.5);
+  color: #fff !important;
+}
+
+/* Efecto al hacer clic */
+.btn-instagram-modern:active {
+  transform: translateY(-1px);
+}
+
+/* Estilo específico para el icono */
+.btn-instagram-modern i {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-instagram-modern:hover i {
+  transform: scale(1.1) rotate(5deg);
 }
